@@ -1,0 +1,52 @@
+<html>
+    <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        var th1=document.createElement("th")
+        th1.innerHTML="First";
+        th1.setAttribute("scope","col");
+
+        var th2=document.createElement("th")
+        th2.innerHTML="Middle";
+        th2.setAttribute("scope","col");
+
+        var th3=document.createElement("th")
+        th3.innerHTML="Last";
+        th3.setAttribute("scope","col");
+
+        var tr=document.createElement("tr");
+        tr.append(th1,th2,th3);
+
+        var thead=document.createElement("thead");
+        thead.setAttribute("class","thead-dark");
+        thead.append(tr);
+
+        
+
+        var td1=document.createElement("td")
+        td1.innerHTML="mark";
+        var td2=document.createElement("td")
+        td2.innerHTML="otto";
+        var td3=document.createElement("td")
+        td3.innerHTML="@mdo";
+        var trb=document.createElement("tr");
+        trb.append(td1,td2,td3);
+        var tbody=document.createElement("tbody");
+        tbody.append(trb);
+
+
+        var table=document.createElement("table");
+        table.append(thead,tbody);
+        table.setAttribute("class","table");
+        table.style.borderCollapse="collapse";
+        document.body.append(table);
+
+
+
+
+    </script>
+</body>
+</html>
